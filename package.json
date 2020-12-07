@@ -1,0 +1,27 @@
+{
+  "name": "resturant-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "My Gatsby site",
+  "author": "riz1-lv",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "license": "0BSD",
+  "dependencies": {
+    "gatsby": "^2.26.1",
+    "gatsby-plugin-image": "^0.3.1",
+    "gatsby-plugin-sharp": "^2.10.1",
+    "gatsby-source-filesystem": "^2.7.0",
+    "gatsby-transformer-sharp": "^2.8.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
