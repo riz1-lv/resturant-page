@@ -3,6 +3,8 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    "react-bootstrap",
+    'bootstrap',
     {
       resolve: "gatsby-source-filesystem",
       options: {
