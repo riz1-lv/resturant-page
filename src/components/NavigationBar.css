@@ -1,0 +1,28 @@
+.navbar{
+  background:transparent;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:1.2rem;
+  position: sticky;
+  top: 0;
+  transition: background .3s;
+  transition-timing-function: linear;
+}
+
+.navbar.active{
+  background: #000;
+  
+}
+
+.navLogo{
+  color:#fff;
+  justify-self: flex-start;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin-left:24px;
+  font-weight: bold;
+  text-decoration: none;
+}
