@@ -3,6 +3,11 @@ import NavigationBar from "../components/NavigationBar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
+import Hero from "../components/Hero.js";
+
+
+
+
 
 class IndexPage extends React.Component{
   
@@ -11,6 +16,10 @@ class IndexPage extends React.Component{
       <main>
         <title>Home Page</title>
         <NavigationBar/>
+        <Hero/>
+        
+
+
         <Jumbotron fluid>
       <Container>
     <h1>Fluid jumbotron</h1>

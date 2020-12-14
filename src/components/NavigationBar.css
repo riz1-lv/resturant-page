@@ -26,3 +26,7 @@
   font-weight: bold;
   text-decoration: none;
 }
+
+.navbar-nav{
+  margin-left: 40px;
+}
