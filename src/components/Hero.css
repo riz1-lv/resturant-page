@@ -9,6 +9,7 @@
   position: relative;
   object-fit: contain;
   z-index: 1;
+  
 }
 
 #heroBg{
@@ -23,14 +24,41 @@
 }
 
 #heroVid{
-  object-fit: fill;
+  object-fit: cover;
   width: 100%;
   height: 100%;
-  -o-object-fit: fill;
+  -o-object-fit: cover;
   z-index: -1;
   background: #232a34;
 }
 #title{
   color: #ffffff;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  z-index: 2;
+  position: absolute;
+  font-size: 64px;
+}
+#mainText{
+  margin-top: auto;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 2;
+  color: #ffffff;
+  
+}
+#contactInfo{
+  text-align: center;
+  font-size: 15;
+}
+#line{
+  margin: .2rem;
+  border-width: 10px;
+  border: 1px solid white;
+  width:100%;
   z-index: 2;
 }
