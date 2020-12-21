@@ -1,12 +1,15 @@
 import React, { useState,useEffect } from 'react'
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav'
 import './NavigationBar.css';
 
 
 const NavigationBar = () => {
   
   const [scrollNav,setScrollNav] = useState(false);
+  const [click,setClick] = useState(false);
+
+  const changeClick = ()=>{ 
+    setClick(!click);
+  }
 
   const changeNav = () =>{
     if(window.scrollY >= 80)
@@ -15,12 +18,31 @@ const NavigationBar = () => {
       setScrollNav(false);
     }  
   }
+
   
   useEffect(()=>{
     window.addEventListener('scroll', changeNav)
   },[scrollNav]);
+  
+  useEffect(()=>{
+    changeNav()
+  },[scrollNav])
 
   return (
+    <div>
+      <div className={scrollNav? 'navContainer active':'navContainer'}>
+        <div className='navybar'>
+          <a className='navyLogo' href = '/'>RESTURANT</a>
+        </div>
+        <div className="menu-icon" onClick={changeClick}>
+          <i id="icon" className={click? 'fas fa-times':'fas fa-bars'}/>
+        </div>
+        <ul className='navMenu'>  
+
+        </ul>
+      </div>
+    </div>
+    /**
     <div>
       <Navbar className={scrollNav?'navbar active':'navbar'} fixed="top" variant="dark" expand="lg">
       <Navbar.Brand className="navLogo" href='/' >RESTURANT</Navbar.Brand>
@@ -31,7 +53,7 @@ const NavigationBar = () => {
       </Nav>
       </Navbar>
     </div>
-    
+    */
   )
 }
 

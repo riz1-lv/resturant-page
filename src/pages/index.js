@@ -27,6 +27,7 @@ class IndexPage extends React.Component{
       This is a modified jumbotron that occupies the entire horizontal space of
       its parent.
     </p>
+    <i className='fas fa-times'/>
       </Container>
     </Jumbotron>
     
