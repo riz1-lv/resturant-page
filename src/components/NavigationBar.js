@@ -1,5 +1,9 @@
 import React, { useState,useEffect } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars,faTimes } from '@fortawesome/free-solid-svg-icons'
+import { Link } from "gatsby"
 import './NavigationBar.css';
+import { Button } from './Button.js';
 
 
 const NavigationBar = () => {
@@ -18,7 +22,9 @@ const NavigationBar = () => {
       setScrollNav(false);
     }  
   }
-
+  const closeMobileMenu = () =>{
+    setClick(false);
+  }
   
   useEffect(()=>{
     window.addEventListener('scroll', changeNav)
@@ -35,11 +41,26 @@ const NavigationBar = () => {
           <a className='navyLogo' href = '/'>RESTURANT</a>
         </div>
         <div className="menu-icon" onClick={changeClick}>
-          <i id="icon" className={click? 'fas fa-times':'fas fa-bars'}/>
+          <FontAwesomeIcon id="icon" icon={click?faTimes:faBars}/>
         </div>
-        <ul className='navMenu'>  
-
+        <ul className={click?'navMenu active':'navMenu'}>  
+          <li className='navItem'>
+            <Link to='/' className="navLinks" onClick={closeMobileMenu}>
+            Home
+            </Link>
+          </li>
+          <li className='navItem'>
+            <Link to='/menu' className="navLinks" onClick={closeMobileMenu}>
+            Menu
+            </Link>
+          </li>
+          <li className='navItem'>
+            <Link to='/about' className="navLinks" onClick={closeMobileMenu}>
+            About
+            </Link>
+          </li>
         </ul>
+        <Button>Menu </Button>
       </div>
     </div>
     /**

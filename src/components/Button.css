@@ -1,0 +1,17 @@
+:root{
+  color: #ffffff;
+}
+.btn{
+  padding:8px 20px;
+  cursor: pointer;
+  outline: none;
+  border:none;
+  border-radius: 2px;
+}
+
+.btn--primary{
+
+}
+.btn--outline{
+  
+}

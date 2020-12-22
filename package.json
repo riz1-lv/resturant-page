@@ -16,12 +16,17 @@
   },
   "license": "0BSD",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.13",
+    "bootstrap": "^4.5.3",
     "gatsby": "^2.26.1",
     "gatsby-plugin-image": "^0.3.1",
     "gatsby-plugin-sharp": "^2.10.1",
     "gatsby-source-filesystem": "^2.7.0",
     "gatsby-transformer-sharp": "^2.8.0",
     "react": "^16.13.1",
+    "react-bootstrap": "^1.4.0",
     "react-dom": "^16.13.1"
   }
 }
