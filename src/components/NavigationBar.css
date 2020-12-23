@@ -9,40 +9,90 @@
   width: 100%;
   top: 0;
   z-index: 10;
-  transition: background .3s;
+  transition:  background .2s;
   transition-timing-function: linear;
 }
 .navybar{
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   height: 80px;
   z-index: 1;
   width: 100%;
-  max-width: 2000px;
+  align-items: center;
+  max-width: 1500px;
   padding: 0 24px;
 }
 
 .navContainer.active{
-  background: #000;
-  
+  background:rgb(24, 22, 22);
 }
 
 .navyLogo{
   float: left;
   color:#fff;
   justify-self: flex-start;
+  cursor: pointer;
   font-size: 1.5rem;
   display: flex;
+  padding-bottom: .5rem;
   align-items: center;
   margin-left:24px;
   font-weight: bold;
   text-decoration: none;
 }
-
+.navyLogo:hover{
+  color:#fff;
+  text-decoration: none;
+}
+.navMenu{
+  display:grid;
+  grid-template-columns: repeat(4,auto);
+  gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 60vw;
+  justify-content: end;
+  margin-right: 2rem;
+}
+.navItem{
+  height: 80px;
+}
+.navLinks{
+  color:#fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0rem 1rem;
+  height: 100%;
+}
+.navLinks:hover{
+  color:#fff;
+  text-decoration: none;
+  border-bottom: 3px solid #fff;
+  transition: all .2s ease-out;
+}
+#barIcon{
+  color:#fff;
+}
 .menu-icon{
-  display:flex;
-  z-index: 11;
-  color: #fff;
-  width: 20px;
-  height: 20px
+  display: none;
+}
+
+@media screen and (max-width: 960px){
+.menu-icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-100%, 60%);
+  font-size: 1.8rem;
+  cursor: pointer;
+  }
+#xIcon{
+  font-size: 2rem;
+  color:#fff;
+}
+.navyLogo{
+  padding-bottom: 0rem;
+}
 }

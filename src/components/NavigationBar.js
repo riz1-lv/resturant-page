@@ -10,6 +10,7 @@ const NavigationBar = () => {
   
   const [scrollNav,setScrollNav] = useState(false);
   const [click,setClick] = useState(false);
+  const [button,setButton] = useState(true);
 
   const changeClick = ()=>{ 
     setClick(!click);
@@ -25,7 +26,18 @@ const NavigationBar = () => {
   const closeMobileMenu = () =>{
     setClick(false);
   }
-  
+  const showButton = () =>{
+    if(window.innerWidth <= 960){
+      setButton(false);
+    }
+    else{
+      setButton(true);
+    }
+  }
+
+  useEffect(() =>{
+  window.addEventListener('resize',showButton);
+  })
   useEffect(()=>{
     window.addEventListener('scroll', changeNav)
   },[scrollNav]);
@@ -38,10 +50,10 @@ const NavigationBar = () => {
     <div>
       <div className={scrollNav? 'navContainer active':'navContainer'}>
         <div className='navybar'>
-          <a className='navyLogo' href = '/'>RESTURANT</a>
-        </div>
+          <Link className='navyLogo' to = '/'>RESTURANT</Link>
+        
         <div className="menu-icon" onClick={changeClick}>
-          <FontAwesomeIcon id="icon" icon={click?faTimes:faBars}/>
+          <FontAwesomeIcon  icon={click?faTimes :faBars} id={click?'xIcon':'barIcon'}/>
         </div>
         <ul className={click?'navMenu active':'navMenu'}>  
           <li className='navItem'>
@@ -60,7 +72,7 @@ const NavigationBar = () => {
             </Link>
           </li>
         </ul>
-        <Button>Menu </Button>
+      </div>
       </div>
     </div>
     /**
