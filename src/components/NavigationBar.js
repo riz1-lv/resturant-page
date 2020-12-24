@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars,faTimes } from '@fortawesome/free-solid-svg-icons'
 import { Link } from "gatsby"
 import './NavigationBar.css';
-import { Button } from './Button.js';
+
 
 
 const NavigationBar = () => {
@@ -44,13 +44,13 @@ const NavigationBar = () => {
   
   useEffect(()=>{
     changeNav()
-  },[scrollNav])
+  },[scrollNav]) 
 
   return (
     <div>
-      <div className={scrollNav? 'navContainer active':'navContainer'}>
+      <div className={scrollNav || click? 'navContainer active':'navContainer'}>
         <div className='navybar'>
-          <Link className='navyLogo' to = '/'>RESTURANT</Link>
+          <Link className='navyLogo' to = '/' onClick={closeMobileMenu} >RESTURANT</Link>
         
         <div className="menu-icon" onClick={changeClick}>
           <FontAwesomeIcon  icon={click?faTimes :faBars} id={click?'xIcon':'barIcon'}/>
@@ -75,18 +75,6 @@ const NavigationBar = () => {
       </div>
       </div>
     </div>
-    /**
-    <div>
-      <Navbar className={scrollNav?'navbar active':'navbar'} fixed="top" variant="dark" expand="lg">
-      <Navbar.Brand className="navLogo" href='/' >RESTURANT</Navbar.Brand>
-      <Nav>
-        <Nav.Link href="#home">Home</Nav.Link>
-        <Nav.Link href="#about">About</Nav.Link>
-        <Nav.Link href="#menu">Menu</Nav.Link>
-      </Nav>
-      </Navbar>
-    </div>
-    */
   )
 }
 
