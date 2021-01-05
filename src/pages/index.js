@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import Hero from "../components/Hero.js";
+import MenuCard from "../components/MenuCard";
+import Menu from "../components/Menu";
 
 
 
@@ -17,7 +19,8 @@ class IndexPage extends React.Component{
         <title>Home Page</title>
         <NavigationBar/>
         <Hero/>
-        
+        <Menu>
+        </Menu>
 
 
         <Jumbotron fluid>
