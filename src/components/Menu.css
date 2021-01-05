@@ -1,9 +1,20 @@
 .body{
   background: #dadada;
 }
+
+.menu-items{
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: 25em 25em;
+  gap: 3rem 2rem;
+  justify-items: center;
+  justify-content:center;
+}
 .menu-title{
 text-align: center;
-margin-bottom: 2rem;
+margin-bottom: 1rem;
 }
 .underline{
 background:#c59d5f;
@@ -36,7 +47,6 @@ margin-bottom:15px;
   color: #fff;
 }
 .filter-btn:focus {
-  
   outline: none;
 }
 .section {

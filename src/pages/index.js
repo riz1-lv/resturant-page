@@ -20,6 +20,11 @@ class IndexPage extends React.Component{
         <NavigationBar/>
         <Hero/>
         <Menu>
+          <MenuCard img="/images/item-1.jpeg" desc="oh me oh my, place your bets in time, i try to take a roll, but the dice are on patrol, friday night, shining like a secret forest spy." title="pancakes or something I guess" price="$15"/>
+          <MenuCard img="/images/item-1.jpeg" desc="oh me oh my, place your bets in time, i try to take a roll, but the dice are on patrol, friday night, shining like a secret forest spy." title="pancakes or something I guess" price ="$15"/>
+          <MenuCard img="/images/item-1.jpeg" desc="oh me oh my, place your bets in time, i try to take a roll, but the dice are on patrol, friday night, shining like a secret forest spy." title="pancakes or something I guess" price ="$15"/>
+          <MenuCard img="/images/item-1.jpeg" desc="oh me oh my, place your bets in time, i try to take a roll, but the dice are on patrol, friday night, shining like a secret forest spy." title="pancakes or something I guess" price ="$15"/>
+          <MenuCard img="/images/item-1.jpeg" desc="oh me oh my, place your bets in time, i try to take a roll, but the dice are on patrol, friday night, shining like a secret forest spy." title="pancakes or something I guess" price ="$15"/>
         </Menu>
 
 

@@ -4,10 +4,11 @@ import './Button'
 
 const Menu = (props) => {
   return (
-    <div>
+    <div> 
       <section className="menu-section">
         <div className="menu-title">
           <h2>Our Menu</h2>
+        </div>
           <div className="underline"></div>
           <div className="btn-container">
             <button type="button" className="filter-btn">
@@ -29,9 +30,10 @@ const Menu = (props) => {
               Dessert
             </button>
           </div>
-        </div>
-        {props.children}      
       </section>
+      <div className="menu-items">
+        {props.children}  
+        </div>
     </div>
   )
 }
