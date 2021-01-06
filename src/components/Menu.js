@@ -4,7 +4,7 @@ import './Button'
 
 const Menu = (props) => {
   return (
-    <div> 
+    <div className="menu-component"> 
       <section className="menu-section">
         <div className="menu-title">
           <h2>Our Menu</h2>

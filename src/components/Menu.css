@@ -1,19 +1,22 @@
 .body{
   background: #dadada;
 }
-
+.menu-component{
+  margin-bottom: 3rem;
+}
 .menu-items{
-  width: 90vw;
+  width: 95vw;
   margin: 0 auto;
   max-width: 1170px;
   display: grid;
-  grid-template-columns: 25em 25em;
+  grid-template-columns: auto auto;
   gap: 3rem 2rem;
   justify-items: center;
   justify-content:center;
 }
 .menu-title{
 text-align: center;
+font-size:2rem;
 margin-bottom: 1rem;
 }
 .underline{
@@ -50,7 +53,19 @@ margin-bottom:15px;
   outline: none;
 }
 .section {
-  width: 90vw;
+  width: 95vw;
   margin: 0 auto;
   max-width: 1500px;
+}
+@media screen and (max-width: 960px){
+.menu-items{
+  max-width: 90vw;
+  grid-template-columns: none;
+}
+.filter-btn{
+  margin:0 0.10rem;
+}
+.menu-title h2{
+  font-size:1.7rem;
+}
 }
