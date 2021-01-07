@@ -57,7 +57,7 @@ const NavigationBar = () => {
         </div>
         <ul className={click?'navMenu active':'navMenu'}>  
           <li className='navItem'>
-            <Link to='/' className="navLinks" onClick={closeMobileMenu}>
+            <Link to='/#heroContainer' className="navLinks" onClick={closeMobileMenu}>
             Home
             </Link>
           </li>

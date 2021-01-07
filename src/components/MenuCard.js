@@ -1,8 +1,8 @@
 import React, { useState,useEffect } from 'react'
 import './MenuCard.css'
-
+import item from './menuData.js'
 const MenuCard = (props) => {
-  
+    console.log(item);
   
   return (
     
