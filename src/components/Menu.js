@@ -1,8 +1,18 @@
-import React from 'react'
+import React,{ useState,useEffect, Children }  from 'react'
 import './Menu.css'
 import './Button'
 
 const Menu = (props) => {
+
+const [category,setCategory] = useState('All');
+
+const changeCategory = (newCategory) =>{
+  setCategory(newCategory);
+}
+useEffect(()=>{
+  console.log(category);
+})
+
   return (
     <div className="menu-component"> 
       <section className="menu-section">
@@ -11,29 +21,32 @@ const Menu = (props) => {
         </div>
           <div className="underline"></div>
           <div className="btn-container">
-            <button type="button" className="filter-btn">
+            <button type="button" className="filter-btn" onClick={() => changeCategory('All')}>
               All
             </button>
-            <button type="button" className="filter-btn">
+            <button type="button" className="filter-btn" onClick={() => changeCategory('Breakfast')}>
               Breakfast
             </button>
-            <button type="button" className="filter-btn">
+            <button type="button" className="filter-btn" onClick={() => changeCategory('Dinner')}>
               Dinner
             </button>
-            <button type="button" className="filter-btn">
+            <button type="button" className="filter-btn" onClick={() => changeCategory('Lunch')}>
               Lunch
             </button>
-            <button type="button" className="filter-btn">
+            <button type="button" className="filter-btn" onClick={() => changeCategory('Drinks')}>
               Drinks
             </button>
-            <button type="button" className="filter-btn">
+            <button type="button" className="filter-btn" onClick={() => changeCategory('Dessert')}>
               Dessert
             </button>
           </div>
       </section>
       <div className="menu-items">
-        {props.children}  
-        </div>
+        {React.Children.map(props.children, child =>{
+          return React.cloneElement(child,{buttonState: category} )
+        })} 
+         
+      </div>
     </div>
   )
 }

@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container';
 import Hero from "../components/Hero.js";
 import MenuCard from "../components/MenuCard";
 import Menu from "../components/Menu";
-
+import item from '../components/menuData.js'
 
   // eslint-disable-next-line global-require
   require("smooth-scroll")('a[href*="#"]')
@@ -23,11 +23,11 @@ class IndexPage extends React.Component{
         <NavigationBar/>
         <Hero/>
         <Menu>
-          <MenuCard img="../images/item-1.jpeg" desc="oh me oh my, place your bets in time, i try to take a roll, but the dice are on patrol, friday night, shining like a secret forest spy." title="pancakes or something I guess" price="$15"/>
-          <MenuCard img="/images/item-1.jpeg" desc="oh me oh my, place your bets in time, i try to take a roll, but the dice are on patrol, friday night, shining like a secret forest spy." title="pancakes or something I guess" price ="$15"/>
-          <MenuCard img="/images/item-1.jpeg" desc="oh me oh my, place your bets in time, i try to take a roll, but the dice are on patrol, friday night, shining like a secret forest spy." title="pancakes or something I guess" price ="$15"/>
-          <MenuCard img="/images/item-1.jpeg" desc="oh me oh my, place your bets in time, i try to take a roll, but the dice are on patrol, friday night, shining like a secret forest spy." title="pancakes or something I guess" price ="$15"/>
-          <MenuCard img="/images/item-1.jpeg" desc="oh me oh my, place your bets in time, i try to take a roll, but the dice are on patrol, friday night, shining like a secret forest spy." title="pancakes or something I guess" price ="$15"/>
+          <MenuCard dish={item[0]}/>
+          <MenuCard dish={item[1]}/>
+          <MenuCard dish={item[2]}/>
+          <MenuCard dish={item[3]}/>
+          <MenuCard dish={item[4]}/>
         </Menu>
 
 

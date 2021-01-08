@@ -1,22 +1,23 @@
 import React, { useState,useEffect } from 'react'
 import './MenuCard.css'
-import item from './menuData.js'
+
 const MenuCard = (props) => {
-    console.log(item);
+  console.log(props.buttonState);
+  console.log(props.dish);
   
   return (
     
     <div className="menu-card">
       <div className="photo-card">
-        <img src={props.img} className="photo"/>
+        <img src={props.dish['image']} className="photo"/>
       </div>
       <div className="menu-text">
         <header>
-          <h5>{props.title}</h5>
-          <h5 className="price">{props.price}</h5>
+          <h5>{props.dish['title']}</h5>
+          <h5 className="price">{props.dish['price']}</h5>
         </header>
         <p className='item-text'>
-          {props.desc}
+          {props.dish["desc"]}
         </p>
       </div>
     </div>
