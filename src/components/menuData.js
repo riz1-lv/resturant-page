@@ -9,7 +9,7 @@ const menu = [
   },
   {
     id:2,
-    category:"breakfast",
+    category:"dinner",
     title:'Pancakes',
     price:15,
     image:"/images/item-1.jpeg",

@@ -4,39 +4,35 @@ import './Button'
 
 const Menu = (props) => {
 
-const [category,setCategory] = useState('All');
+const [category,setCategory] = useState('all');
 
 const changeCategory = (newCategory) =>{
   setCategory(newCategory);
 }
-useEffect(()=>{
-  console.log(category);
-})
-
   return (
-    <div className="menu-component"> 
-      <section className="menu-section">
-        <div className="menu-title">
-          <h2>Our Menu</h2>
+    <div className="menu-component" id="menu"> 
+      <section className="menu-section" >
+        <div className="menu-title" >
+          <h2 >Our Menu</h2>
         </div>
-          <div className="underline"></div>
+          <div className="underline" ></div>
           <div className="btn-container">
-            <button type="button" className="filter-btn" onClick={() => changeCategory('All')}>
+            <button type="button" className="filter-btn" onClick={() => changeCategory('all')}>
               All
             </button>
-            <button type="button" className="filter-btn" onClick={() => changeCategory('Breakfast')}>
+            <button type="button" className="filter-btn" onClick={() => changeCategory('breakfast')}>
               Breakfast
             </button>
-            <button type="button" className="filter-btn" onClick={() => changeCategory('Dinner')}>
+            <button type="button" className="filter-btn" onClick={() => changeCategory('dinner')}>
               Dinner
             </button>
-            <button type="button" className="filter-btn" onClick={() => changeCategory('Lunch')}>
+            <button type="button" className="filter-btn" onClick={() => changeCategory('lunch')}>
               Lunch
             </button>
-            <button type="button" className="filter-btn" onClick={() => changeCategory('Drinks')}>
+            <button type="button" className="filter-btn" onClick={() => changeCategory('drinks')}>
               Drinks
             </button>
-            <button type="button" className="filter-btn" onClick={() => changeCategory('Dessert')}>
+            <button type="button" className="filter-btn" onClick={() => changeCategory('dessert')}>
               Dessert
             </button>
           </div>

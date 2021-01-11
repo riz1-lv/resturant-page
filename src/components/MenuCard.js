@@ -2,12 +2,24 @@ import React, { useState,useEffect } from 'react'
 import './MenuCard.css'
 
 const MenuCard = (props) => {
+
+let visible = true;
+
   console.log(props.buttonState);
-  console.log(props.dish);
+  if(props.buttonState == props.dish['category'] || props.buttonState == 'all'){
+    visible = true;
+    console.log('visible')
+
+  }
+  else{
+    visible = false;
+    console.log('notvisible')
+    
+  }
+  
   
   return (
-    
-    <div className="menu-card">
+    <div className={visible?"menu-card" : "menu-card-disabled"}>
       <div className="photo-card">
         <img src={props.dish['image']} className="photo"/>
       </div>
