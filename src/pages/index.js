@@ -28,6 +28,14 @@ class IndexPage extends React.Component{
           <MenuCard dish={item[2]}/>
           <MenuCard dish={item[3]}/>
           <MenuCard dish={item[4]}/>
+          <MenuCard dish={item[5]}/>
+          <MenuCard dish={item[6]}/>
+          <MenuCard dish={item[7]}/>
+          <MenuCard dish={item[8]}/>
+          <MenuCard dish={item[9]}/>
+          <MenuCard dish={item[10]}/>
+          <MenuCard dish={item[11]}/>
+          <MenuCard dish={item[12]}/>
         </Menu>
       </main>
     );

@@ -23,11 +23,11 @@ const changeCategory = (newCategory) =>{
             <button type="button" className="filter-btn" onClick={() => changeCategory('breakfast')}>
               Breakfast
             </button>
-            <button type="button" className="filter-btn" onClick={() => changeCategory('dinner')}>
-              Dinner
-            </button>
             <button type="button" className="filter-btn" onClick={() => changeCategory('lunch')}>
               Lunch
+            </button>
+            <button type="button" className="filter-btn" onClick={() => changeCategory('dinner')}>
+              Dinner
             </button>
             <button type="button" className="filter-btn" onClick={() => changeCategory('drinks')}>
               Drinks

@@ -4,6 +4,9 @@
 .menu-component{
   margin-bottom: 3rem;
   padding-top:10rem;
+  padding-bottom: 5rem;
+  min-height: 900px;
+  background: #e6e5e5;
 }
 .menu-items{
   width: 95vw;
