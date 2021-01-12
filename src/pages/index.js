@@ -1,12 +1,11 @@
 import * as React from "react"
 import NavigationBar from "../components/NavigationBar";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Jumbotron from 'react-bootstrap/Jumbotron';
-import Container from 'react-bootstrap/Container';
 import Hero from "../components/Hero.js";
 import MenuCard from "../components/MenuCard";
 import Menu from "../components/Menu";
 import item from '../components/menuData.js'
+import Info from "../components/Info";
 
   // eslint-disable-next-line global-require
   require("smooth-scroll")('a[href*="#"]')
@@ -37,6 +36,7 @@ class IndexPage extends React.Component{
           <MenuCard dish={item[11]}/>
           <MenuCard dish={item[12]}/>
         </Menu>
+        <Info/>
       </main>
     );
   }
