@@ -43,6 +43,7 @@ const changeCategory = (newCategory) =>{
         })} 
          
       </div>
+      <div className="underline" id="bottom-outline" ></div>
     </div>
   )
 }

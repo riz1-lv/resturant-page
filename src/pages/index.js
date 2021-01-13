@@ -6,6 +6,7 @@ import MenuCard from "../components/MenuCard";
 import Menu from "../components/Menu";
 import item from '../components/menuData.js'
 import Info from "../components/Info";
+import Footer from "../components/Footer";
 
   // eslint-disable-next-line global-require
   require("smooth-scroll")('a[href*="#"]')
@@ -37,6 +38,7 @@ class IndexPage extends React.Component{
           <MenuCard dish={item[12]}/>
         </Menu>
         <Info/>
+        <Footer/>
       </main>
     );
   }

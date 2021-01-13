@@ -3,6 +3,7 @@ import './Hero.css'
 
 const Hero = () => {
   return (
+    <div>
       <div id="heroContainer">
         <div id='heroBg'>
           <video id="heroVid" src="/videos/video.mp4" autoPlay loop muted />
@@ -17,7 +18,10 @@ const Hero = () => {
           (555) 555-5555
         </p>
         </div>
+        
       </div>
+      <div className="underline" id="hero-underline" ></div>
+    </div>
   )
 }
 
