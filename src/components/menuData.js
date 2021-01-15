@@ -101,7 +101,7 @@ const menu = [
     title:'Steak',
     price:33,
     image:"/images/steak.jpg",
-    desc:"filet mingnon with herb garlic sauce cooked to your preffered liking"
+    desc:"filet mignon with herb garlic sauce cooked to your preffered liking"
   }
   ];
 export default menu;
