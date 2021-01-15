@@ -5,6 +5,7 @@ module.exports = {
     "gatsby-transformer-sharp",
     "react-bootstrap",
     'bootstrap',
+    `gatsby-plugin-react-helmet`,
     {
       resolve: "gatsby-source-filesystem",
       options: {

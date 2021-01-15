@@ -7,6 +7,7 @@ import Menu from "../components/Menu";
 import item from '../components/menuData.js'
 import Info from "../components/Info";
 import Footer from "../components/Footer";
+import { Helmet } from "react-helmet";
 
   // eslint-disable-next-line global-require
   require("smooth-scroll")('a[href*="#"]')
@@ -19,7 +20,10 @@ class IndexPage extends React.Component{
   render(){
     return (
       <main>
-        <title>Home Page</title>
+        <Helmet>
+          <title>Resturant</title>
+          <meta charSet="utf-8"/>
+        </Helmet>
         <NavigationBar/>
         <Hero/>
         <Menu>

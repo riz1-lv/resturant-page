@@ -5,7 +5,7 @@ const menu = [
     title:'Pancakes',
     price:15,
     image:"/images/item-1.jpeg",
-    desc:"oh me oh my, place your bets in time, i try to take a roll, but the dice are on patrol, friday night, shining like a secret forest spy."
+    desc:"Fluffy buttermilk pancakes served with your choice of fresh fruit, all-natural maple syrup and whipped cream."
   },
   {
     id:2,
@@ -13,7 +13,7 @@ const menu = [
     title:'Burger',
     price:18,
     image:"/images/burger.jpg",
-    desc:"oh me oh my, place your bets in time, i try to take a roll, but the dice are on patrol, friday night, shining like a secret forest spy."
+    desc:"Fresh all natural grass fed beef patty flame grilled with colby and american cheese on a freshly baked bun. Served with a side of french fries or cole slaw"
   },
   {
     id:3,
@@ -21,7 +21,7 @@ const menu = [
     title:'Eggs Benedict',
     price:15,
     image:"/images/eggs-benny.jpg",
-    desc:"oh me oh my, place your bets in time, i try to take a roll, but the dice are on patrol, friday night, shining like a secret forest spy."
+    desc:"Two poached eggs and a slice of Canadian bacon, served on top of a freshly baked english muffin with our signature hollandaise sauce"
   },
   {
     id:4,
@@ -29,7 +29,7 @@ const menu = [
     title:'Vegan Quiche',
     price:15,
     image:"/images/quiche.jpg",
-    desc:"oh me oh my, place your bets in time, i try to take a roll, but the dice are on patrol, friday night, shining like a secret forest spy."
+    desc:"Freshly baked piecrust filled with spinach, tofu, veggitables and our homemade spice blend"
   },
   {
     id:5,
@@ -37,7 +37,7 @@ const menu = [
     title:'Wine',
     price:12,
     image:"/images/wine.jpg",
-    desc:"oh me oh my, place your bets in time, i try to take a roll, but the dice are on patrol, friday night, shining like a secret forest spy."
+    desc:"Mayacamas Vineyards’ 2014 Cabernet Sauvignon imported from Italy"
   },
   {
     id:6,
@@ -45,7 +45,7 @@ const menu = [
     title:'Beer',
     price:11,
     image:"/images/beer.jpg",
-    desc:"oh me oh my, place your bets in time, i try to take a roll, but the dice are on patrol, friday night, shining like a secret forest spy."
+    desc:"DeuS Brut Des Flandres beer imported from Belgium"
   },
   {
     id:7,
@@ -53,7 +53,7 @@ const menu = [
     title:'Mineral Water',
     price:4,
     image:"/images/water.jpg",
-    desc:"oh me oh my, place your bets in time, i try to take a roll, but the dice are on patrol, friday night, shining like a secret forest spy."
+    desc:"Fresh mountain water sourced from the Himalayan mountain range"
   },
   {
     id:8,
@@ -61,7 +61,7 @@ const menu = [
     title:'Tiramisu',
     price:17,
     image:"/images/tiramisu.jpg",
-    desc:"oh me oh my, place your bets in time, i try to take a roll, but the dice are on patrol, friday night, shining like a secret forest spy."
+    desc:" rum and coffee-soaked ladyfingers layered with mascarpone custard and whipped cream.."
   },
   {
     id:9,
@@ -69,7 +69,7 @@ const menu = [
     title:'Creme Brulee',
     price:15,
     image:"/images/creme-brulee.jpg",
-    desc:"oh me oh my, place your bets in time, i try to take a roll, but the dice are on patrol, friday night, shining like a secret forest spy."
+    desc:"A rich custard base topped with a layer of hardened caramelized sugar."
   },
   {
     id:10,
@@ -77,7 +77,7 @@ const menu = [
     title:'Caviar',
     price:125,
     image:"/images/caviar.jpg",
-    desc:"oh me oh my, place your bets in time, i try to take a roll, but the dice are on patrol, friday night, shining like a secret forest spy."
+    desc:"We offer the finest Idaho White Sturgeon caviar raised through sustainable means, "
   },
   {
     id:11,
@@ -85,7 +85,7 @@ const menu = [
     title:'Pasta',
     price:35,
     image:"/images/pasta.jpg",
-    desc:"oh me oh my, place your bets in time, i try to take a roll, but the dice are on patrol, friday night, shining like a secret forest spy."
+    desc:"fettuccini with sauteed portobello mushroom served with a cream truffle sauce "
   },
   {
     id:12,
@@ -93,7 +93,7 @@ const menu = [
     title:'Lobster',
     price:40,
     image:"/images/lobster-soup.jpg",
-    desc:"oh me oh my, place your bets in time, i try to take a roll, but the dice are on patrol, friday night, shining like a secret forest spy."
+    desc:"chunks of sweet lobster in a beautifully rich, seasoned cream sauce"
   },
   {
     id:13,
@@ -101,7 +101,7 @@ const menu = [
     title:'Steak',
     price:33,
     image:"/images/steak.jpg",
-    desc:"oh me oh my, place your bets in time, i try to take a roll, but the dice are on patrol, friday night, shining like a secret forest spy."
+    desc:"filet mingnon with herb garlic sauce cooked to your preffered liking"
   }
   ];
 export default menu;
