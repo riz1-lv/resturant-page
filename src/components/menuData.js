@@ -4,7 +4,7 @@ const menu = [
     category:"breakfast",
     title:'Pancakes',
     price:15,
-    image:"./resturant-page/images/item-1.jpeg",
+    image:"images/item-1.jpeg",
     desc:"Fluffy buttermilk pancakes served with your choice of fresh fruit, all-natural maple syrup and whipped cream."
   },
   {
@@ -12,7 +12,7 @@ const menu = [
     category:"lunch",
     title:'Burger',
     price:18,
-    image:"../images/burger.jpg",
+    image:"images/burger.jpg",
     desc:"Fresh all natural grass fed beef patty flame grilled with colby and american cheese on a freshly baked bun. Served with a side of french fries or cole slaw"
   },
   {
@@ -20,7 +20,7 @@ const menu = [
     category:"breakfast",
     title:'Eggs Benedict',
     price:15,
-    image:"./eggs-benny.jpg",
+    image:"images/eggs-benny.jpg",
     desc:"Two poached eggs and a slice of Canadian bacon, served on top of a freshly baked english muffin with our signature hollandaise sauce"
   },
   {
@@ -28,7 +28,7 @@ const menu = [
     category:"breakfast",
     title:'Vegan Quiche',
     price:15,
-    image:"/resturant-page/images/quiche.jpg",
+    image:"images/quiche.jpg",
     desc:"Freshly baked piecrust filled with spinach, tofu, veggitables and our homemade spice blend"
   },
   {
@@ -36,7 +36,7 @@ const menu = [
     category:"drinks",
     title:'Wine',
     price:12,
-    image:"../wine.jpg",
+    image:"images/wine.jpg",
     desc:"Mayacamas Vineyards’ 2014 Cabernet Sauvignon imported from Italy"
   },
   {
