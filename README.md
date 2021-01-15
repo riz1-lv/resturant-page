@@ -3,7 +3,7 @@
   Resturant website template
 </h1>
 a modern looking resturant page with mobile responsiveness. made with react.js and gatsby
-
+https://riz1-lv.github.io/resturant-page/
 ##  Quick start
 
 1.  **Run Locally**
