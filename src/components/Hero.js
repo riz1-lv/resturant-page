@@ -6,7 +6,7 @@ const Hero = () => {
     <div>
       <div id="heroContainer">
         <div id='heroBg'>
-          <video id="heroVid" src="/videos/video.mp4" autoPlay loop muted />
+          <video id="heroVid" src="./videos/video.mp4" autoPlay loop muted />
         </div>
         <h1 id="title">EXPERIENCE GORMET CUISINE</h1>
         <div id="mainText">

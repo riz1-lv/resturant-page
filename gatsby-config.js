@@ -15,4 +15,5 @@ module.exports = {
       __key: "images",
     },
   ],
+  pathPrefix: "/resturant-page"
 };

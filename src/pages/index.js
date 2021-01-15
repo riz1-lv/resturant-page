@@ -10,8 +10,9 @@ import Footer from "../components/Footer";
 import { Helmet } from "react-helmet";
 
   // eslint-disable-next-line global-require
-  require("smooth-scroll")('a[href*="#"]')
-
+  if(typeof window !== 'undefined'){
+    require("smooth-scroll")('a[href*="#"]')
+  }
 
 
 

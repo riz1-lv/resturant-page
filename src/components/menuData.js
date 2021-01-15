@@ -4,7 +4,7 @@ const menu = [
     category:"breakfast",
     title:'Pancakes',
     price:15,
-    image:"/images/item-1.jpeg",
+    image:"./images/item-1.jpeg",
     desc:"Fluffy buttermilk pancakes served with your choice of fresh fruit, all-natural maple syrup and whipped cream."
   },
   {
@@ -12,7 +12,7 @@ const menu = [
     category:"lunch",
     title:'Burger',
     price:18,
-    image:"/images/burger.jpg",
+    image:"./images/burger.jpg",
     desc:"Fresh all natural grass fed beef patty flame grilled with colby and american cheese on a freshly baked bun. Served with a side of french fries or cole slaw"
   },
   {
@@ -20,7 +20,7 @@ const menu = [
     category:"breakfast",
     title:'Eggs Benedict',
     price:15,
-    image:"/images/eggs-benny.jpg",
+    image:"./images/eggs-benny.jpg",
     desc:"Two poached eggs and a slice of Canadian bacon, served on top of a freshly baked english muffin with our signature hollandaise sauce"
   },
   {
@@ -28,7 +28,7 @@ const menu = [
     category:"breakfast",
     title:'Vegan Quiche',
     price:15,
-    image:"/images/quiche.jpg",
+    image:"./images/quiche.jpg",
     desc:"Freshly baked piecrust filled with spinach, tofu, veggitables and our homemade spice blend"
   },
   {
@@ -36,7 +36,7 @@ const menu = [
     category:"drinks",
     title:'Wine',
     price:12,
-    image:"/images/wine.jpg",
+    image:"./images/wine.jpg",
     desc:"Mayacamas Vineyards’ 2014 Cabernet Sauvignon imported from Italy"
   },
   {
@@ -44,7 +44,7 @@ const menu = [
     category:"drinks",
     title:'Beer',
     price:11,
-    image:"/images/beer.jpg",
+    image:"./images/beer.jpg",
     desc:"DeuS Brut Des Flandres beer imported from Belgium"
   },
   {
@@ -52,7 +52,7 @@ const menu = [
     category:"drinks",
     title:'Mineral Water',
     price:4,
-    image:"/images/water.jpg",
+    image:"./images/water.jpg",
     desc:"Fresh mountain water sourced from the Himalayan mountain range"
   },
   {
@@ -60,7 +60,7 @@ const menu = [
     category:"dessert",
     title:'Tiramisu',
     price:17,
-    image:"/images/tiramisu.jpg",
+    image:"./images/tiramisu.jpg",
     desc:" rum and coffee-soaked ladyfingers layered with mascarpone custard and whipped cream.."
   },
   {
@@ -68,7 +68,7 @@ const menu = [
     category:"dessert",
     title:'Creme Brulee',
     price:15,
-    image:"/images/creme-brulee.jpg",
+    image:"./images/creme-brulee.jpg",
     desc:"A rich custard base topped with a layer of hardened caramelized sugar."
   },
   {
@@ -76,7 +76,7 @@ const menu = [
     category:"dessert",
     title:'Caviar',
     price:125,
-    image:"/images/caviar.jpg",
+    image:"./images/caviar.jpg",
     desc:"We offer the finest Idaho White Sturgeon caviar raised through sustainable means, "
   },
   {
@@ -84,7 +84,7 @@ const menu = [
     category:"dinner",
     title:'Pasta',
     price:35,
-    image:"/images/pasta.jpg",
+    image:"./images/pasta.jpg",
     desc:"fettuccini with sauteed portobello mushroom served with a cream truffle sauce "
   },
   {
@@ -92,7 +92,7 @@ const menu = [
     category:"dinner",
     title:'Lobster',
     price:40,
-    image:"/images/lobster-soup.jpg",
+    image:"./images/lobster-soup.jpg",
     desc:"chunks of sweet lobster in a beautifully rich, seasoned cream sauce"
   },
   {
@@ -100,7 +100,7 @@ const menu = [
     category:"dinner",
     title:'Steak',
     price:33,
-    image:"/images/steak.jpg",
+    image:"./images/steak.jpg",
     desc:"filet mignon with herb garlic sauce cooked to your preffered liking"
   }
   ];
